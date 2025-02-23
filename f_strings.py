@@ -88,7 +88,7 @@ alice_pace = (hours*60+minutes+seconds/60) / distance_km
 precision=2
 total_time = (hours+minutes/60+seconds/3600)
 print(f"Alice's pace: {alice_pace:.{precision}f} minutes/km")
-print(f'Total time: {total_time:.{precision}f}')
+print(f'Total time: {total_time:.{precision}f} hours')
 
 ### Expected output
 # Alice's pace: 5.33 minutes/km
