@@ -7,7 +7,12 @@
 """
 
 ### Your code here
+start = int(input('Enter start: '))
+stop = int(input('Enter stop: '))
+step = int(input('Enter step: '))
 
+numbers = list(range(start, stop, step))
+print(f'Generated list: {numbers}')
 ### EXPECTED OUTPUT:
 # Enter start: 2
 # Enter stop: 10
@@ -102,13 +107,13 @@
 
 ### EXPECTED OUTPUT:
 # Enter a sentence: Python slicing is powerful!
-# Every second character: Pto lcngi owrfl
+# Every second character: Pto lcn spwru!
 
 # ---------------------------------- Task 8 ---------------------------------- #
 """ DESCRIPTION:
     Write a program which will ask the user to enter 3 names.
 	The names, should be stored into a list 'names'.
-    Create another list 'sorted_name' which will have names, sorted alphabetically. Do not change the original 'names' list.
+    Create another list 'sorted_names' which will have names, sorted alphabetically. Do not change the original 'names' list.
 
     TIP: use list.sort() method to sort a list. Note, that the sort() method works "in-place",
 """
