@@ -8,5 +8,9 @@ student_score = {
 for key, value in student_score.items():
     min_score = min(student_score.values())
     max_score = max(student_score.values())
-print (f'{key} - {min_score}')
-print (f'{key} - {max_score}')
+    min_key = min(student_score, key=student_score.get)
+    max_key = max(student_score, key=student_score.get)
+
+
+print (f'{min_key} - {min_score}')
+print (f'{max_key} - {max_score}')
