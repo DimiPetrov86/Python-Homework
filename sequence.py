@@ -7,12 +7,12 @@
 """
 
 ### Your code here
-start = int(input('Enter start: '))
-stop = int(input('Enter stop: '))
-step = int(input('Enter step: '))
+# start = int(input('Enter start: '))
+# stop = int(input('Enter stop: '))
+# step = int(input('Enter step: '))
 
-numbers = list(range(start, stop, step))
-print(f'Generated list: {numbers}')
+# numbers = list(range(start, stop, step))
+# print(f'Generated list: {numbers}')
 ### EXPECTED OUTPUT:
 # Enter start: 2
 # Enter stop: 10
@@ -29,7 +29,14 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
+# user_input = input('Enter numbers separated by space')
+# input_list = list(map(int, user_input.split()))
 
+# start_index = int(input('Enter start index: '))
+# stop_index = int(input('Enter stop index: '))
+
+# sliced_list = input_list[start_index:stop_index]
+# print (f'Sliced list: {sliced_list2}')
 ### EXPECTED OUTPUT:
 # Enter numbers separated by spaces: 1 2 3 4 5 6 7 8 9
 # Enter start index: 2
@@ -46,7 +53,9 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
-
+# original_list = range(1,51)
+# print (f'Original List: {list(original_list)}')
+# print (f'Even Numbers: {list(original_list[1:51:2])}')
 ### EXPECTED OUTPUT:
 # Original list: [1, 2, 3, ..., 50]
 # Even numbers: [2, 4, 6, ..., 50]
@@ -61,7 +70,9 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
-
+# orig_list = range(100,49,-5)
+# print (f'Original list: {list(orig_list)}')
+# print (f'First half: {list(orig_list[:6])}')
 ### EXPECTED OUTPUT:
 # Original list: [100, 95, 90, ..., 50]
 # First half: [100, 95, 90, ..., 75]
@@ -75,7 +86,8 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
-
+# word_input = input('Enter a word: ')
+# print (word_input[::-1])
 ### EXPECTED OUTPUT:
 # Enter a word: Python
 # Reversed word: nohtyP
@@ -90,7 +102,9 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
-
+# orig_l = range(10,101,10)
+# print (f'Original list: {list(orig_l)}')
+# print (f'Middle part: {list(orig_l[2:8])}')
 ### EXPECTED OUTPUT:
 # Original list: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 # Middle part: [30, 40, 50, 60, 70, 80]
@@ -104,7 +118,8 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
-
+# sentence_input = input('Enter a sentence: ')
+# print (f'Every second character: {sentence_input[::2]}')
 ### EXPECTED OUTPUT:
 # Enter a sentence: Python slicing is powerful!
 # Every second character: Pto lcn spwru!
@@ -119,6 +134,17 @@ print(f'Generated list: {numbers}')
 """
 
 ### Your code here
+names = []
+
+names.append(input('Enter 1st name: '))
+names.append(input('Enter 2nd name: '))
+names.append(input('Enter 3rd name: '))
+
+sorted_names = names[:]
+sorted_names.sort()
+print (f'Originally entered names {names}')
+print (f'Sorted name: {sorted_names}')
+
 
 ### EXPECTED OUTPUT:
 # Enter 1st name: Maria

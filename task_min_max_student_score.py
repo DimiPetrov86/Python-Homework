@@ -5,7 +5,7 @@ student_score = {
     'Georgy': 5.00
 }
 
-for key, values in student_score.items():
+for key, value in student_score.items():
     min_score = min(student_score.values())
     max_score = max(student_score.values())
 print (f'{key} - {min_score}')
